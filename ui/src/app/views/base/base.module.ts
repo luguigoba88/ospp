@@ -49,6 +49,10 @@ import { NavbarsComponent } from './navbars/navbars.component';
 
 // Components Routing
 import { BaseRoutingModule } from './base-routing.module';
+import { ShowCusComponent } from './show-cus/show-cus.component';
+import { AddEditCusComponent } from './add-edit-cus/add-edit-cus.component';
+import { ShowLeadComponent } from './show-lead/show-lead.component';
+import { AddEditLeadComponent } from './add-edit-lead/add-edit-lead.component';
 
 @NgModule({
   imports: [
@@ -79,6 +83,10 @@ import { BaseRoutingModule } from './base-routing.module';
     NavbarsComponent,
     CustomersComponent,
     LeadsComponent,
+    ShowCusComponent,
+    AddEditCusComponent,
+    ShowLeadComponent,
+    AddEditLeadComponent,
   ]
 })
 export class BaseModule { }

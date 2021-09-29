@@ -37,15 +37,15 @@ import {
 
 // Import routing module
 import { AppRoutingModule } from './app.routing';
-import { ApiOsppService } from './api-ospp.service';
-import {HttpClientModule} from '@angular/common/http';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
 
 // Import 3rd party components
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
+import { OsppService } from './ospp.service';
+
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -79,10 +79,10 @@ import { ChartsModule } from 'ng2-charts';
   providers: [
     {
       provide: LocationStrategy,
-      useClass: HashLocationStrategy,
+      useClass: HashLocationStrategy
     },
     IconSetService,
-    ApiOsppService,
+    OsppService,
   ],
   bootstrap: [ AppComponent ]
 })

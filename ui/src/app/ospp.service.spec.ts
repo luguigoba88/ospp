@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ApiOsppService } from './api-ospp.service';
+import { OsppService } from './ospp.service';
 
-describe('ApiOsppService', () => {
-  let service: ApiOsppService;
+describe('OsppService', () => {
+  let service: OsppService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ApiOsppService);
+    service = TestBed.inject(OsppService);
   });
 
   it('should be created', () => {
